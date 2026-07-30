@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Networking-Detailed-Notes/' ,
+  base: '/full-stack_chatApp/' ,
   plugins: [react()],
 })
