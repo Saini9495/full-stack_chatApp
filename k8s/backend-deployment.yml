@@ -32,4 +32,10 @@ spec:
           value: "5001"
 
         - name: MONGODB_URI
-          value: "mongodb://mongodb-service:27017/chatapp"
+          value: mongodb://mongoadmin:secret@mongodb-service:27017/dbname?authSource=admin
+
+        - name: JWT_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: chatapp-secrets
+              key: JWT
